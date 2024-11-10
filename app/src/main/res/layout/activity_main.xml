@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Aplikasi"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="85dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Perhitungan Gaji"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Teks Nama -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Masukkan Nama :"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Kolom Input Nama -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext"
+        android:padding="16dp" />
+
+    <!-- Teks Status -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Status :" />
+
+    <!-- Checkbox status-->
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menikah"
+        android:layout_marginTop="5dp" />
+
+    <!-- Teks Golongan -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Golongan :" />
+
+    <!-- Radio Button Golongan -->
+    <RadioGroup
+        android:id="@+id/radio_group_golongan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <RadioButton
+            android:id="@+id/rb_golongan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan 1"/>
+
+        <RadioButton
+            android:id="@+id/rb_golongan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan 2"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp" />
+
+</LinearLayout>
